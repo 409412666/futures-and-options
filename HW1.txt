@@ -1,0 +1,18 @@
+ n = 100
+ k = zeros (n)
+ v = zeros (n)
+ e = zeros (n)
+
+ for i = 1: n
+ k[i] = i
+ v[i] = (1+1/i)^i
+ e[i] =  exp(1)
+ end
+
+ using plots
+ scatter(k, v, x1abe1 = "freq of
+ compounding" , y1abe1 = "va1ue, y1ims=
+ (0,3))
+ scatter! (k, e)
+
+ savefig("G:\\2022年工作\\輔大資料\\期貨與選擇權\\hw1.png"
